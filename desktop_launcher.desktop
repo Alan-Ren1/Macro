@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Anime Expedition Macro
+Exec=python3 /workspaces/Macro/launch_macro.py
+Icon=/workspaces/Macro/MacroImage.png
+Terminal=false
+Categories=Utility;

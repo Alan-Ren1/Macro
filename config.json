@@ -1,0 +1,76 @@
+{
+  "hotkey": "f6",
+  "click_delay": 0.25,
+  "queue_wait_seconds": 5.0,
+  "repeat": 1,
+  "webhook_url": "",
+  "webhook_events": ["started", "finished"],
+  "followup": {
+    "after_match": {
+      "action": "run_profile",
+      "profile": "villain_invasion"
+    }
+  },
+  "profiles": {
+    "villain_invasion": {
+      "enter": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 540}
+      ],
+      "leave": [
+        {"action": "press", "key": "esc"}
+      ]
+    },
+    "expeditions": {
+      "enter": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 620}
+      ],
+      "leave": [
+        {"action": "press", "key": "esc"}
+      ]
+    }
+  },
+  "modes": {
+    "story": {
+      "enter": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 540},
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 620},
+        {"action": "wait", "seconds": 5.0},
+        {"action": "click", "x": 960, "y": 700}
+      ],
+      "leave": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "press", "key": "esc"},
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 620}
+      ],
+      "default": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 540}
+      ]
+    },
+    "pvp": {
+      "enter": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 540},
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 620},
+        {"action": "wait", "seconds": 5.0},
+        {"action": "click", "x": 960, "y": 700}
+      ],
+      "leave": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "press", "key": "esc"},
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 620}
+      ],
+      "default": [
+        {"action": "wait", "seconds": 1.0},
+        {"action": "click", "x": 960, "y": 540}
+      ]
+    }
+  }
+}
